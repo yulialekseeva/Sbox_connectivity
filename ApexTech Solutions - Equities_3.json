@@ -38976,6 +38976,89 @@
         "presence" : "required"
       } ]
     }, {
+      "id" : "43",
+      "name" : "BusinessMessageReject",
+      "shortName" : "BizMsgRej",
+      "variant" : "OneSided_ToCpty",
+      "msgCategory" : "BusinessReject",
+      "msgType" : "j",
+      "changeLog" : [ {
+        "changeType" : "added",
+        "version" : "FIX.Latest EP300"
+      }, {
+        "changeType" : "updated",
+        "version" : "FIX.Latest EP300"
+      } ],
+      "documentation" : [ {
+        "role" : "SYNOPSIS",
+        "text" : "The Business Message Reject message can reject an application-level message which fulfills session-level rules and cannot be rejected via any other means. Note if the message fails a session-level rule (e.g. body length is incorrect), a session-level Reject message should be issued."
+      } ],
+      "content" : [ {
+        "refType" : "component",
+        "refKey" : {
+          "id" : "1024",
+          "name" : "StandardHeader"
+        },
+        "presence" : "required",
+        "documentation" : [ {
+          "text" : "MsgType = j (lowercase)"
+        } ]
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "45",
+          "name" : "RefSeqNum"
+        },
+        "documentation" : [ {
+          "text" : "MsgSeqNum of rejected message"
+        } ]
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "372",
+          "name" : "RefMsgType"
+        },
+        "presence" : "required",
+        "documentation" : [ {
+          "text" : "The MsgType of the FIX message being referenced."
+        } ]
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "1130",
+          "name" : "RefApplVerID"
+        },
+        "documentation" : [ {
+          "text" : "Recommended when rejecting an application message that does not explicitly provide ApplVerID ( 1128) on the message being rejected. In this case the value from the DefaultApplVerID(1137) or the default value specified in the NoMsgTypes repeating group on the logon message should be provided."
+        } ]
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "380",
+          "name" : "BusinessRejectReason"
+        },
+        "presence" : "required",
+        "documentation" : [ {
+          "text" : "Code to identify reason for a Business Message Reject message."
+        } ]
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "58",
+          "name" : "Text"
+        },
+        "documentation" : [ {
+          "text" : "Where possible, message to explain reason for rejection"
+        } ]
+      }, {
+        "refType" : "component",
+        "refKey" : {
+          "id" : "1025",
+          "name" : "StandardTrailer"
+        },
+        "presence" : "required"
+      } ]
+    }, {
       "id" : "57",
       "name" : "SecurityListRequest",
       "shortName" : "SecListReq",
