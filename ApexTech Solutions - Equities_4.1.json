@@ -38891,6 +38891,16 @@
           "name" : "StandardTrailer"
         },
         "presence" : "required"
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "29005",
+          "name" : "CorpActionCodeType"
+        },
+        "changeLog" : [ {
+          "changeType" : "added",
+          "version" : "FIX.Latest EP300"
+        } ]
       } ]
     }, {
       "id" : "43",
@@ -38974,6 +38984,16 @@
           "name" : "StandardTrailer"
         },
         "presence" : "required"
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "29005",
+          "name" : "CorpActionCodeType"
+        },
+        "changeLog" : [ {
+          "changeType" : "added",
+          "version" : "FIX.Latest EP300"
+        } ]
       } ]
     }, {
       "id" : "43",
@@ -39057,6 +39077,16 @@
           "name" : "StandardTrailer"
         },
         "presence" : "required"
+      }, {
+        "refType" : "field",
+        "refKey" : {
+          "id" : "29005",
+          "name" : "CorpActionCodeType"
+        },
+        "changeLog" : [ {
+          "changeType" : "added",
+          "version" : "FIX.Latest EP300"
+        } ]
       } ]
     }, {
       "id" : "57",
